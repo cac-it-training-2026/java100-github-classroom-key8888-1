@@ -28,6 +28,24 @@
 
 package jp.co.sss.java100_questions_cac.lesson01.challenge04;
 
-public class Patisserie {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+public class Patisserie {
+	public static void main(String[] args) throws Exception, IOException {
+		int stron = 30;
+		int skra = 30;
+		int pisuta = 30;
+		System.out.println("本日のおすすめ商品です。");
+		System.out.println("シトロン      \\250 ・・・ 残り" + stron + "個\n"
+				+ "ショコラ      \\280 ・・・ 残り" + skra + "個\n"
+				+ "ピスターシュ  \\320 ・・・ 残り" + pisuta + "個");
+
+		System.out.println("それぞれ何個ずつ買いますか？（最大30個まで）");
+
+		BufferedReader reader = new BufferedReader(
+				new InputStreamReader(System.in));
+		stron = Integer.parseInt(reader.readLine());
+	}
 }

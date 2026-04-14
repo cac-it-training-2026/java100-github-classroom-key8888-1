@@ -22,5 +22,13 @@
 package jp.co.sss.java100_questions_cac.lesson01.challenge03;
 
 public class Patisserie {
-
+	public static void main(String[] args) {
+		int stron = 30;
+		int skra = 30;
+		int pisuta = 30;
+		System.out.println("本日のおすすめ商品です。");
+		System.out.println("シトロン      \\250 ・・・ 残り" + stron + "個\n"
+				+ "ショコラ      \\280 ・・・ 残り" + skra + "個\n"
+				+ "ピスターシュ  \\320 ・・・ 残り" + pisuta + "個");
+	}
 }
